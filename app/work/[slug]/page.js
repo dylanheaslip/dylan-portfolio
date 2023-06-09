@@ -24,7 +24,7 @@ export default function Project({params}) {
         </div>
       </div>
       <div className={styles.cover} style={{backgroundImage: `url("${props.frontMatter.cover}")`}}></div>
-      <div className={styles.content}>
+      <div className={`post-content ${styles.content}`}>
         <MDXRemote source={props.content} options={options}/>
 
 
