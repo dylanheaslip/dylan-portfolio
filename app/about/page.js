@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="page about">
       <div className={styles.header}>
-        <h1 className="big-text">Hi, I'm Dylan 👋</h1>
+        <h1 className="big-text">Hi, I&apos;m Dylan 👋</h1>
       </div>
       <div className={styles.subheading}>
         <span className="title-small">ABOUT ME</span>
