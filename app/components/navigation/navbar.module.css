@@ -6,13 +6,19 @@
   padding: 24px 48px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   z-index: 1000;
 }
 
 .brand {
   height: 24px;
   width: auto;
+}
+
+.homelink * {
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 .menu ul {

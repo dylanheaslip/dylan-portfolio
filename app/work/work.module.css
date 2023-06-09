@@ -1,19 +1,21 @@
 .header {
   padding: 160px var(--default-margin) 68px var(--default-margin);
-  background-color: var(--accent);
+  /* background-color: var(--accent); */
+  background-color: var(--primary);
   color: white;
 }
 
 .subheading {
   border-top: 1px solid var(--light-grey);
   padding: 24px var(--default-margin) 64px var(--default-margin);
-  background-color: var(--accent);
+  /* background-color: var(--accent); */
+  background-color: var(--primary);
   color: white;
 }
 
 .projects {
-  padding: 64px var(--default-margin);
-  padding-bottom: 64px;
+  margin: 64px var(--default-margin);
+  padding-bottom: 32px;
 }
 
 .projects:last-child div {

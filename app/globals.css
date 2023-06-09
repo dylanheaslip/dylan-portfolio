@@ -183,6 +183,11 @@ small, .text_small {font-size: 0.707rem;}
 
 /* END TYPOGRAPHY SETUP */
 
+ul {
+  list-style-position: inside;
+}
+
+
 code {
   margin-bottom: 24px;
   display: block;
