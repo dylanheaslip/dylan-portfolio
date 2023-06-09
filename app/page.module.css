@@ -1,0 +1,63 @@
+.hero {
+  padding-left: var(--default-margin);
+  padding-right: var(--default-margin);
+  padding-top: 160px;
+  background: var(--primary);
+  color: white;
+  padding-bottom: 25%;
+}
+
+.hero img {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.wrapper {
+  margin-top: -25%;
+  padding: var(--default-margin);
+}
+
+.banner {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: url("/placeholder/planet-volumes-6tI9Fk5p4bo-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about {
+  padding: 128px var(--default-margin);
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.work {
+  padding: 128px var(--default-margin);
+}
+
+.projectgrid {
+  margin-top: 80px;
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    margin-top: -25%;
+    padding: var(--default-margin);
+  }
+
+  .banner {
+    aspect-ratio: 4 / 3;
+  }
+
+  .about {
+    padding: 64px var(--default-margin);
+  }
+}

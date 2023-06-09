@@ -1,0 +1,28 @@
+.footer {
+  margin-top: 24px;
+  border: 1px solid var(--light-grey);
+  padding: var(--default-margin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  color: var(--grey);
+}
+
+.spinner img {
+  max-width: 64px;
+  animation-name: footer-wheel;
+  animation-duration: 15.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  transform-origin: 50% 50%;
+}
+
+@keyframes footer-wheel {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

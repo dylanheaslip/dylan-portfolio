@@ -1,6 +1,13 @@
+import styles from './footer.module.css'
+
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className={styles.footer}>
+      <div className={styles.spinner}>
+        <img src="../brand-circle-text-v1.png"></img>
+      </div>
+      <div><small>&copy; 2023 Dylan</small></div>
+    </div>
   )
 }
 

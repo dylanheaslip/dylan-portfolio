@@ -1,0 +1,24 @@
+
+[
+  { "key": 0, 
+    "title": "Project Name", 
+    "image": "/placeholder/planet-volumes-_WVDYqsB9ig-unsplash.jpg", 
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam velit sapien, convallis vitae tortor vitae, tincidunt facilisis sapien. Integer vitae vehicula dui. Cras malesuada ante eget molestie pulvinar. ",
+    "skills": "Strategy • Design • Web Development", 
+    "slug": "single" 
+  },
+  { "key": 1, 
+    "title": "Project Name", 
+    "image": "/placeholder/planet-volumes-ydvaP3HZjXk-unsplash.jpg", 
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam velit sapien, convallis vitae tortor vitae, tincidunt facilisis sapien. Integer vitae vehicula dui. Cras malesuada ante eget molestie pulvinar. ",
+    "skills": "Strategy • Design • Web Development", 
+    "slug": "single" 
+  },
+  { "key": 2, 
+    "title": "Project Name", 
+    "image": "placeholder/planet-volumes-ZNSUJ-JQP-c-unsplash.jpg", 
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam velit sapien, convallis vitae tortor vitae, tincidunt facilisis sapien. Integer vitae vehicula dui. Cras malesuada ante eget molestie pulvinar. ",
+    "skills": "Strategy • Design • Web Development", 
+    "slug": "single" 
+  }
+]

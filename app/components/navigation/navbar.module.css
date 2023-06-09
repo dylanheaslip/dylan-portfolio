@@ -1,0 +1,61 @@
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+.brand {
+  height: 24px;
+  width: auto;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+.light {
+  color: white;
+  transition: 0.25s ease-in-out;
+}
+
+.dark {
+  color: black;
+  transition: 0.25s ease-in-out;
+}
+
+.light svg {
+  fill: white;
+  transition: 0.25s ease-in-out;
+}
+
+.dark svg {
+  fill: black;
+  transition: 0.25s ease-in-out;
+}
+
+.scrolled {
+  background: white;
+  color: black;
+  transition: 0.25s ease-in-out;
+}
+
+.scrolled svg {
+  fill: black;
+  transition: 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+}

@@ -1,0 +1,51 @@
+.header {
+  padding: 128px var(--default-margin);
+  text-align: center;
+}
+
+.header h1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.tagline {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.info {
+  color: var(--grey);
+  font-weight: 500;
+}
+
+.cover {
+  margin: 0px var(--default-margin);
+  width: auto;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  margin: 64px auto;
+  padding: var(--default-margin);
+  max-width: 900px;
+}
+
+.content p {
+  color: var(--grey);
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding-bottom: 24px;
+    text-align: left;
+  }
+
+  .cover {
+    margin: 0;
+    aspect-ratio: 3 / 2;
+  }
+  
+}

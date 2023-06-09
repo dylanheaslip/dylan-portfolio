@@ -1,0 +1,31 @@
+.header {
+  padding: 160px var(--default-margin) 68px var(--default-margin);
+  background-color: var(--accent);
+  color: white;
+}
+
+.subheading {
+  border-top: 1px solid var(--light-grey);
+  padding: 24px var(--default-margin) 64px var(--default-margin);
+  background-color: var(--accent);
+  color: white;
+}
+
+.projects {
+  padding: 64px var(--default-margin);
+  padding-bottom: 64px;
+}
+
+.projects:last-child div {
+  border-bottom: none!important;
+}
+
+.cta {
+  margin-top: 16px;
+  margin-bottom: 80px;
+  text-align: center;
+  color: var(--light-grey);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}

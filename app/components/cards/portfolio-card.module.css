@@ -1,0 +1,62 @@
+.card {
+  margin-top: 64px;
+  padding-bottom: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  gap: 48px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 3 / 2;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details h3 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.details p {
+  max-width: 400px;
+}
+
+.details .skills {
+  margin-top: auto;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.card .details h3 {
+  color: black;
+  transition: 0.25s ease-in-out;
+}
+
+.card:hover .details h3 {
+  color: var(--accent);
+  transition: 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .details p {
+    max-width: 600px;
+  }
+
+  .details .skills {
+    margin-top: 24px;
+  }
+  
+}
