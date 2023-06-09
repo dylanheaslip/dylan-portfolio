@@ -1,5 +1,9 @@
 import styles from './about.module.css'
 
+export const metadata = {
+  title: 'About - Dylan',
+}
+
 export default function About() {
 
   return (

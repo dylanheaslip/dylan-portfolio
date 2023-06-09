@@ -5,6 +5,10 @@ import matter from 'gray-matter'
 import PortfolioCardLarge from '../components/cards/portfolio-card-large'
 import styles from './work.module.css'
 
+export const metadata = {
+  title: 'Work - Dylan',
+}
+
 export default function Work() {
 
   const projectsDir = "projects"
