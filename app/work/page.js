@@ -1,9 +1,23 @@
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
 import PortfolioCardLarge from '../components/cards/portfolio-card-large'
 import styles from './work.module.css'
 
-const portfolioItems = require('../portfolio-items.json')
-
 export default function Work() {
+
+  const projectsDir = "projects"
+  const files = fs.readdirSync(path.join(projectsDir))
+  const projects = files.map(filename => {
+  const fileContent = fs.readFileSync(path.join(projectsDir, filename), 'utf-8')
+  const { data: frontMatter } = matter(fileContent)
+    return {
+      meta: frontMatter,
+      slug: filename.replace('.mdx', '')
+    }
+  })
+
   return (
     <div className="page work">
       <div className={styles.header}>
@@ -13,8 +27,8 @@ export default function Work() {
         <span className="title-small">NOTABLE WORK</span>
       </div>
       <div className={styles.projects}>
-          {portfolioItems.map((item) => 
-            <PortfolioCardLarge {...item} />
+          {projects.map((item) => 
+            <PortfolioCardLarge title={item.meta.title} image={item.meta.cover} description={item.meta.excerpt} skills={item.meta.skills} slug={item.slug} />
           )}
       </div>
       <div className={styles.cta}>

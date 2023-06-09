@@ -1,10 +1,23 @@
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
 import Button from './components/buttons/button'
 import PortfolioCardLarge from './components/cards/portfolio-card-large'
 import styles from './page.module.css'
 
-const portfolioItems = require('./portfolio-items.json')
-
 export default function Home() {
+  const projectsDir = "projects"
+  const files = fs.readdirSync(path.join(projectsDir))
+  const projects = files.map(filename => {
+  const fileContent = fs.readFileSync(path.join(projectsDir, filename), 'utf-8')
+  const { data: frontMatter } = matter(fileContent)
+    return {
+      meta: frontMatter,
+      slug: filename.replace('.mdx', '')
+    }
+  })
+
   return (
     <div className="page home">
       <div className={styles.hero}>
@@ -21,8 +34,8 @@ export default function Home() {
       <div className={styles.work}>
         <h1 className="title-small title-small--accent">WORK</h1>
         <div className={styles.projectgrid}>
-          {portfolioItems.map((item) => 
-            <PortfolioCardLarge {...item} />
+          {projects.map((item) => 
+            <PortfolioCardLarge title={item.meta.title} image={item.meta.cover} description={item.meta.excerpt} skills={item.meta.skills} slug={item.slug} />
           )}
         </div>
         <div className={styles.more}>

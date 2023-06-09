@@ -31,7 +31,7 @@ function Navbar() {
         // } 
         // else {
           console.log(pathname)
-          if (pathname == "/work/single") {
+          if (pathname.startsWith("/work/")) {
             setIsDark(true);
           }
           else {
