@@ -27,8 +27,8 @@ export default function Work() {
         <span className="title-small">NOTABLE WORK</span>
       </div>
       <div className={styles.projects}>
-          {projects.map((item) => 
-            <PortfolioCardLarge title={item.meta.title} image={item.meta.cover} description={item.meta.excerpt} skills={item.meta.skills} slug={item.slug} />
+          {projects.map((item, index) => 
+            <PortfolioCardLarge key={index} title={item.meta.title} image={item.meta.cover} description={item.meta.excerpt} skills={item.meta.skills} slug={item.slug} />
           )}
       </div>
       <div className={styles.cta}>

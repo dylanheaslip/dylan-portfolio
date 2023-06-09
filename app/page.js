@@ -34,8 +34,8 @@ export default function Home() {
       <div className={styles.work}>
         <h1 className="title-small title-small--accent">WORK</h1>
         <div className={styles.projectgrid}>
-          {projects.map((item) => 
-            <PortfolioCardLarge title={item.meta.title} image={item.meta.cover} description={item.meta.excerpt} skills={item.meta.skills} slug={item.slug} />
+          {projects.map((item, index) => 
+            <PortfolioCardLarge key={index} title={item.meta.title} image={item.meta.cover} description={item.meta.excerpt} skills={item.meta.skills} slug={item.slug} />
           )}
         </div>
         <div className={styles.more}>
