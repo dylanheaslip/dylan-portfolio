@@ -33,10 +33,10 @@ export default function About() {
         </div>
       </div>
       <div className={styles.gallery}>
-        <img src='/placeholder/planet-volumes-_WVDYqsB9ig-unsplash.jpg'/>
-        <img src='/placeholder/planet-volumes-6tI9Fk5p4bo-unsplash.jpg'/>
-        <img src='/placeholder/planet-volumes-ydvaP3HZjXk-unsplash.jpg'/>
-        <img src='/placeholder/planet-volumes-ZNSUJ-JQP-c-unsplash.jpg'/>
+        <img src='/projects/cropped-project-samples/cropped-project-2.jpg'/>
+        <img src='/projects/cropped-project-samples/cropped-project-3.jpg'/>
+        <img src='/projects/cropped-project-samples/cropped-project-4.jpg'/>
+        <img src='/projects/cropped-project-samples/cropped-project-1.jpg'/>
       </div>
       <div className={styles.certs}>
         <h4>Certifications</h4>

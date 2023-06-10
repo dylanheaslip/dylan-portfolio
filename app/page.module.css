@@ -20,7 +20,8 @@
 .banner {
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: url("/placeholder/planet-volumes-6tI9Fk5p4bo-unsplash.jpg");
+  /* background: url("/placeholder/planet-volumes-6tI9Fk5p4bo-unsplash.jpg"); */
+  background: url("/projects/uts-student-app/single-event-mockup-iphone.png");
   background-position: center;
   background-size: cover;
 }
@@ -58,6 +59,10 @@
   }
 
   .about {
+    padding: 64px var(--default-margin);
+  }
+
+  .work {
     padding: 64px var(--default-margin);
   }
 }
