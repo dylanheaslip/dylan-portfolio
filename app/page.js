@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="page home">
       <div className={styles.hero}>
-        <img src="/home-bigtext.svg" />
+        <img src="/home-bigtext.svg" alt='Crafting digital experiences banner'/>
       </div>
       <div className={styles.wrapper}>
         <div className={styles.banner}></div>
