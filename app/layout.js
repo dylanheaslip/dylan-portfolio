@@ -15,6 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta name="robots" content="noindex,nofollow" />
       <GoogleAnalytics />
       <body className={inter.className}>
         <Navbar />
