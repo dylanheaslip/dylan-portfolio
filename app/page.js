@@ -28,8 +28,8 @@ export default function Home() {
       </div>
       <div className={styles.about}>
         <h1 className="title-small title-small--accent">ABOUT</h1>
-        <h2>I am a <u>digital designer</u> and <u>developer</u> from Sydney, studying Transdisciplinary Innovation.</h2>
-        <h2><b>I design and build websites and apps.</b></h2>
+        <h2>I am a <u>digital designer</u> and <u>developer</u> from Sydney, studying IT and Transdisciplinary Innovation.</h2>
+        {/* <h2><b>I design and build websites and apps.</b></h2> */}
       </div>
       <div className={styles.work}>
         <h1 className="title-small title-small--accent">WORK</h1>
